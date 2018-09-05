@@ -1,0 +1,17 @@
+X200机器上的MySqlServer root P X200sql2017
+$mysql -u root -p X200sql2017
+1 CREATE DATABASE nltkdb;
+2 CREATE USER 'nluser'@'localhost' IDENTIFIED BY 'nltkDB2017!';
+3 GRANT ALL ON nltkdb.* TO 'nluser'@'localhost';
+4 FLUSH PRIVILEGES;
+创建数据库nltkdb，并赋权给nluser，pass：nltkDB2017!
+mysql> show databases;
+mysql> use nltkdb; 
+mysql> show tables;
+
+$sudo apt install mysql-workbench
+
+$mysql-workbench 启动图形界面的mysql-workbench：
+
+
+

@@ -1,0 +1,16 @@
+from nltk.book import *
+
+text1
+自动下载安装
+sudo pip install -U nltk
+
+import nltk 
+nltk.download()
+下载之后,问题是把这些数据放到那里, 它会自己检测,可以通过下面import 检测到目录:
+
+from nltk.book import *
+from nltk import *
+fdist = FreqDist(text1)
+print(fdist['whale'])
+可以通过 fdist.plot(TopK,cumulative=True) 画出来出现频率前K的词汇的光滑曲线，去掉第二个参数，是折线图。个人感觉曲线好看。。。
+
